@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ – MạchViệt</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body data-page="home">
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="hero">
+      <ul class="mega" id="mega"></ul>
+
+      <div class="slider">
+        <div class="slider-track" id="track">
+          <div class="slide" style="background: linear-gradient(120deg, #fff1f0, #fff)">
+            <div><h1>Ưu đãi sinh viên giảm 10%</h1><p>Nhập mã SV10 khi thanh toán cho mọi combo thực hành.</p><a class="btn" href="combo.html">Xem combo</a></div>
+            <div class="slide-art" data-color="#ff3b30"></div>
+          </div>
+          <div class="slide" style="background: linear-gradient(120deg, #eefbf2, #fff)">
+            <div><h1>ESP32 mới về kho</h1><p>Wi-Fi, Bluetooth và camera cho dự án IoT của bạn.</p><a class="btn" href="danh-muc.html?cat=0&sub=ESP32">Xem ESP32</a></div>
+            <div class="slide-art" data-color="#22c55e"></div>
+          </div>
+          <div class="slide" style="background: linear-gradient(120deg, #eef3ff, #fff)">
+            <div><h1>Đủ linh kiện cho đồ án</h1><p>Vi điều khiển, cảm biến, nguồn và dụng cụ trong một đơn.</p><a class="btn" href="danh-muc.html">Vào danh mục</a></div>
+            <div class="slide-art" data-color="#2f6bff"></div>
+          </div>
+          <div class="slide" style="background: linear-gradient(120deg, #f6f0ff, #fff)">
+            <div><h1>Freeship từ 500.000 ₫</h1><p>Giao hỏa tốc 4 giờ tại TP.HCM và Hà Nội.</p><a class="btn" href="ho-tro.html">Xem hỗ trợ</a></div>
+            <div class="slide-art" data-color="#8b5cf6"></div>
+          </div>
+        </div>
+        <button class="slider-btn prev" data-dir="-1" aria-label="Slide trước">‹</button>
+        <button class="slider-btn next" data-dir="1" aria-label="Slide sau">›</button>
+        <div class="slider-dots" id="dots"></div>
+      </div>
+
+      <div class="hero-side">
+        <a class="mini-banner" style="--c: #2f6bff" href="danh-muc.html?cat=0&sub=Arduino"><h3>Kit Arduino</h3><span class="muted">Bắt đầu học vi điều khiển</span></a>
+        <a class="mini-banner" style="--c: #22c55e" href="combo.html"><h3>Combo đồ án</h3><span class="muted">Tiết kiệm đến 100.000 ₫</span></a>
+      </div>
+    </section>
+
+    <section class="perks">
+      <div class="perk"><b>Giao hỏa tốc 4 giờ</b><span class="muted">Nội thành TP.HCM, Hà Nội</span></div>
+      <div class="perk"><b>Bảo hành 7 ngày</b><span class="muted">Hàng lỗi do nhà sản xuất</span></div>
+      <div class="perk"><b>Hỗ trợ kỹ thuật</b><span class="muted">Hotline 0900 123 456</span></div>
+      <div class="perk"><b>Hóa đơn VAT</b><span class="muted">Cho doanh nghiệp, trường học</span></div>
+    </section>
+
+    <h2 class="section-title">Danh mục nổi bật</h2>
+    <div class="tiles" id="tiles"></div>
+
+    <div class="section-head"><h2 class="section-title">Linh kiện mới về</h2><a href="danh-muc.html">Xem tất cả →</a></div>
+    <div class="grid" id="new-grid"></div>
+
+    <div class="section-head"><h2 class="section-title">Kit phát triển bán chạy</h2><a href="danh-muc.html?cat=0">Xem tất cả →</a></div>
+    <div class="grid" id="kit-grid"></div>
+
+    <section class="flash">
+      <div class="flash-head">
+        <h2>Giá sốc hôm nay</h2>
+        <div class="countdown" id="cd"></div>
+      </div>
+      <div class="grid" id="flash-grid"></div>
+    </section>
+
+    <h2 class="section-title">Thương hiệu đối tác</h2>
+    <div class="brands">
+      <span>Arduino</span><span>Espressif</span><span>Raspberry Pi</span>
+      <span>Texas Instruments</span><span>STMicro</span><span>Vishay</span>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/render.js"></script>
+</body>
+</html>

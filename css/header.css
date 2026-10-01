@@ -1,0 +1,76 @@
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.topbar { background: var(--soft); font-size: 13px; color: var(--mute); }
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.mainbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.logo {
+  font: 700 34px "Barlow Condensed", sans-serif;
+  background: var(--rgb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.search { flex: 1; display: flex; }
+.search input {
+  flex: 1;
+  padding: 11px 16px;
+  border: 1px solid var(--line);
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
+}
+.search button {
+  padding: 0 22px;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+  background: var(--ink);
+  color: #fff;
+}
+
+.header-actions { display: flex; gap: 10px; }
+.action-btn {
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  white-space: nowrap;
+}
+.action-btn:hover { border-color: var(--blue); }
+
+.main-nav { display: flex; gap: 4px; overflow-x: auto; }
+.main-nav a {
+  padding: 10px 16px;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+.main-nav a.active {
+  font-weight: 500;
+  border-image: var(--rgb) 1;
+}
+
+@media (max-width: 800px) {
+  .mainbar { flex-wrap: wrap; }
+  .search { order: 3; flex-basis: 100%; }
+  .topbar .container span:last-child { display: none; }
+}
